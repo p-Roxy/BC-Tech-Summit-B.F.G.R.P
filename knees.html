@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knees and Toes</title>
+    <link rel="stylesheet" href="css/app.css">
+    <script src="js/SliderFunction.js"></script>
+</head>
+<body>
+<div class="row" style="margin-top: 7%">
+    <div class="small-12 columns text-center">
+        <h1>Knees and Toes</h1>
+    </div>
+</div>
+<div class="row" style="margin-top: 2%">
+    <div class="callout">
+        <div class="small-3 columns text-center">
+            <h3>Left Heel</h3>
+            <label>Up</label>
+            <input type="range" id="lheel" orient="vertical" min="-50" max="50" value="0" step="25" onclick="touchUp('lheel')" onmouseup="touchUp('lheel')"></input>
+            <label>Down</label>
+        </div>
+        <div class="small-3 columns text-center">
+            <h3>Left Knee</h3>
+            <label>Up</label>
+            <input type="range" id="lknee" orient="vertical" min="-50" max="50" value="0" step="25" onclick="touchUp('lknee')" onmouseup="touchUp('lknee')"></input>
+            <label>Down</label>
+        </div>
+        <div class="small-3 columns text-center">
+            <h3>Right Knee</h3>
+            <label>Up</label>
+            <input type="range" id="rknee" orient="vertical" min="-50" max="50" value="0" step="25" onclick="touchUp('rknee')" onmouseup="touchUp('rknee')"></input>
+            <label>Down</label>
+        </div>
+        <div class="small-3 columns text-center">
+            <h3>Right Heel</h3>
+            <label>Up</label>
+            <input type="range" id="rheel" orient="vertical" min="-50" max="50" value="0" step="25" onclick="touchUp('rheel')" onmouseup="touchUp('rheel')"></input>
+            <label>Down</label>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

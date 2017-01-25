@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Function</title>
+    <link rel="stylesheet" href="css/app.css">
+    <script src="js/SliderFunction.js"></script>
+</head>
+<body>
+<div class="row" style="margin-top: 7%">
+    <div class="small-12 columns text-center">
+        <h1>Shoulders and Back</h1>
+    </div>
+</div>
+<div class="row" style="margin-top: 2%">
+    <div class="callout">
+        <div class="small-4 columns text-center">
+            <h3>Left Shoulder</h3>
+            <label>Up</label>
+            <input type="range" id="lshoulder" orient="vertical" min="-50" max="50" value="0" step="25" onmouseup="touchUp('lshoulder')"></input>
+            <label>Down</label>
+        </div>
+        <div class="small-4 columns text-center">
+            <h3>Back</h3>
+            <label>Up</label>
+            <input type="range" id="back" orient="vertical" min="-50" max="50" value="0" step="25" onmouseup="touchUp('back')"></input>
+            <label>Down</label>
+        </div>
+        <div class="small-4 columns text-center">
+            <h3>Right Shoulder</h3>
+            <label>Up</label>
+            <input type="range" id="rshoulder" orient="vertical" min="-50" max="50" value="0" step="25" onmouseup="touchUp('rshoulder')"></input>
+            <label>Down</label>
+        </div>
+    </div>
+</div>
+</body>
+</html>
