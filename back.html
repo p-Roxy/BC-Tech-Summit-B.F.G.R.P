@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html class="no-js" lang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
@@ -9,7 +9,7 @@
     <script src="js/SliderFunction.js"></script>
 </head>
 <body>
-<div class="row" style="margin-top: 7%">
+<div class="row">
     <div class="small-12 columns text-center">
         <h1>Shoulders and Back</h1>
     </div>
@@ -17,21 +17,21 @@
 <div class="row" style="margin-top: 2%">
     <div class="callout">
         <div class="small-4 columns text-center">
-            <h3>Left Shoulder</h3>
+            <h6>Left Shoulder</h6>
             <label>Up</label>
-            <input type="range" id="lshoulder" orient="vertical" min="-50" max="50" value="0" step="25" onmouseup="touchUp('lshoulder')"></input>
+            <input type="range" id="lshoulder" orient="vertical" min="-127" max="127" value="0" step="5" onchange="touchUp('lshoulder')"></input>
             <label>Down</label>
         </div>
         <div class="small-4 columns text-center">
-            <h3>Back</h3>
+            <h6>Back</h6>
             <label>Up</label>
-            <input type="range" id="back" orient="vertical" min="-50" max="50" value="0" step="25" onmouseup="touchUp('back')"></input>
+            <input type="range" id="back" orient="vertical" min="-127" max="127" value="0" step="5" onchange="touchUp('back')"></input>
             <label>Down</label>
         </div>
         <div class="small-4 columns text-center">
-            <h3>Right Shoulder</h3>
+            <h6>Right Shoulder</h6>
             <label>Up</label>
-            <input type="range" id="rshoulder" orient="vertical" min="-50" max="50" value="0" step="25" onmouseup="touchUp('rshoulder')"></input>
+            <input type="range" id="rshoulder" orient="vertical" min="-127" max="127" value="0" step="5" onchange="touchUp('rshoulder')"></input>
             <label>Down</label>
         </div>
     </div>
