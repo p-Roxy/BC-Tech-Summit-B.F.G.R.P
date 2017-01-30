@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html class="no-js" lang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
@@ -9,7 +9,7 @@
     <script src="js/SliderFunction.js"></script>
 </head>
 <body>
-<div class="row" style="margin-top: 7%">
+<div class="row">
     <div class="small-12 columns text-center">
         <h1>Head</h1>
     </div>
@@ -17,27 +17,27 @@
 <div class="row" style="margin-top: 2%">
     <div class="callout">
         <div class="small-3 columns text-center">
-            <h3>Left Fingers</h3>
+            <h6>Left Fingers</h6>
             <label>Up</label>
-            <input type="range" id="lfingers" orient="vertical" min="-50" max="50" value="0" step="25" onmouseup="touchUp('lfingers')"></input>
+            <input type="range" id="lfingers" orient="vertical" min="-50" max="50" value="0" step="10" onchange="touchUp('lfingers')"></input>
             <label>Down</label>
         </div>
         <div class="small-3 columns text-center">
-            <h3>Head Left</h3>
+            <h6>Head Left</h6>
             <label>Up</label>
-            <input type="range" id="htilt" orient="vertical" min="-50" max="50" value="0" step="25" onmouseup="touchUp('htilt')"></input>
+            <input type="range" id="htilt" orient="vertical" min="-50" max="50" value="0" step="25" onchange="touchUp('htilt')"></input>
             <label>Down</label>
         </div>
         <div class="small-3 columns text-center">
-            <h3>Head Right</h3>
+            <h6>Head Right</h6>
             <label>Up</label>
-            <input type="range" id="hturn" orient="vertical" min="-50" max="50" value="0" step="25" onmouseup="touchUp('hturn')"></input>
+            <input type="range" id="hturn" orient="vertical" min="-50" max="50" value="0" step="25" onchange="touchUp('hturn')"></input>
             <label>Down</label>
         </div>
         <div class="small-3 columns text-center">
-            <h3>Right Fingers</h3>
+            <h6>Right Fingers</h6>
             <label>Up</label>
-            <input type="range" id="rfingers" orient="vertical" min="-50" max="50" value="0" step="25" onmouseup="touchUp('rfingers')"></input>
+            <input type="range" id="rfingers" orient="vertical" min="-50" max="50" value="0" step="25" onchange="touchUp('rfingers')"></input>
             <label>Down</label>
         </div>
     </div>
