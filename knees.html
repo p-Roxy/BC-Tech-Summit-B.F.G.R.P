@@ -9,7 +9,7 @@
     <script src="js/SliderFunction.js"></script>
 </head>
 <body>
-<div class="row" style="margin-top: 7%">
+<div class="row">
     <div class="small-12 columns text-center">
         <h1>Knees and Toes</h1>
     </div>
@@ -17,27 +17,27 @@
 <div class="row" style="margin-top: 2%">
     <div class="callout">
         <div class="small-3 columns text-center">
-            <h3>Left Heel</h3>
+            <h6>Left Heel</h6>
             <label>Up</label>
-            <input type="range" id="lheel" orient="vertical" min="-50" max="50" value="0" step="25" onclick="touchUp('lheel')" onmouseup="touchUp('lheel')"></input>
+            <input type="range" id="lheel" min="-127" max="127" value="0" onchange="touchUp('lheel')"></input>
             <label>Down</label>
         </div>
         <div class="small-3 columns text-center">
-            <h3>Left Knee</h3>
+            <h6>Left Knee</h6>
             <label>Up</label>
-            <input type="range" id="lknee" orient="vertical" min="-50" max="50" value="0" step="25" onclick="touchUp('lknee')" onmouseup="touchUp('lknee')"></input>
+            <input type="range" id="lknee" min="-127" max="127" value="0" onchange="touchUp('lknee')"></input>
             <label>Down</label>
         </div>
         <div class="small-3 columns text-center">
-            <h3>Right Knee</h3>
+            <h6>Right Knee</h6>
             <label>Up</label>
-            <input type="range" id="rknee" orient="vertical" min="-50" max="50" value="0" step="25" onclick="touchUp('rknee')" onmouseup="touchUp('rknee')"></input>
+            <input type="range" id="rknee" min="-127" max="127" value="0" onchange="touchUp('rknee')"></input>
             <label>Down</label>
         </div>
         <div class="small-3 columns text-center">
-            <h3>Right Heel</h3>
+            <h6>Right Heel</h6>
             <label>Up</label>
-            <input type="range" id="rheel" orient="vertical" min="-50" max="50" value="0" step="25" onclick="touchUp('rheel')" onmouseup="touchUp('rheel')"></input>
+            <input type="range" id="rheel" min="-127" max="127" value="0" onchange="touchUp('rheel')"></input>
             <label>Down</label>
         </div>
     </div>
