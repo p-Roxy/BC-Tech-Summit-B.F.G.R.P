@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 179.49 393.26" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+  <defs>
+    <style>
+
+      .cls-1, .cls-4, .cls-10, .cls-2, .cls-3, .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+      stroke: #8dc63f;
+      }
+
+      .cls-1, .cls-10, .cls-2, .cls-3, .cls-4, .cls-6, .cls-7, .cls-8, .cls-9 {
+      stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+      stroke: #ee2a7b;
+      }
+
+      .cls-3 {
+      stroke: #f7941d;
+      }
+
+      .cls-4 {
+      stroke: #662d91;
+      }
+
+      .cls-5, .cls-6 {
+      fill: #662d91;
+      }
+
+      .cls-6, .cls-7 {
+      stroke: #fff;
+      }
+
+      .cls-8 {
+      fill: #fff;
+      }
+
+      .cls-10, .cls-8 {
+      stroke: #4ec9f5;
+      }
+
+      .cls-9 {
+      fill: #231f20;
+      stroke: #231f20;
+      }
+    </style>
+  </defs>
+  <title>selectionimg</title>
+  <a xlink:href="knees.html" target="_parent">
+    <g id="Layer_1" data-name="Layer 1">
+    <path class="cls-1" d="M185.34,317.87l-17.48,40.29Z" transform="translate(-119.47 2.18)"/>
+    <line class="cls-1" x1="85.37" y1="329.16" x2="84.3" y2="367.87"/>
+    <circle class="cls-1" cx="64.8" cy="372.73" r="20.03"/>
+    <path class="cls-1" d="M233.76,316.66,251.24,357Z" transform="translate(-119.47 2.18)"/>
+    <line class="cls-1" x1="94.79" y1="327.95" x2="95.87" y2="366.66"/>
+    <circle class="cls-1" cx="115.36" cy="371.52" r="20.03"/>
+  </g>
+  </a>
+  <a xlink:href="LeftArm.html" target="_parent">
+  <g id="Layer_2" data-name="Layer 2">
+    <line class="cls-2" x1="159.88" y1="273.88" x2="159.88" y2="0.12"/>
+    <line class="cls-2" x1="120.14" y1="240.99" x2="162.17" y2="275.22"/>
+    <path class="cls-2" d="M281.69,271.69c.13,3.18,2.72,6.49,1.12,9.25a6.05,6.05,0,0,1-1.62,1.68,20,20,0,0,1-15.79,3.91,17.2,17.2,0,0,1-12.51-10.12" transform="translate(-119.47 2.18)"/>
+  </g>
+  </a>
+  <a xlink:href="RightArm.html" target="_parent">
+  <g id="Layer_3" data-name="Layer 3">
+    <line class="cls-3" x1="57.82" y1="245.05" x2="15.79" y2="279.28"/>
+    <path class="cls-3" d="M135.21,275.76c-.13,3.18-2.72,6.49-1.12,9.25a6.05,6.05,0,0,0,1.62,1.68,20,20,0,0,0,15.79,3.91A17.2,17.2,0,0,0,164,280.48" transform="translate(-119.47 2.18)"/>
+    <line class="cls-3" x1="16.91" y1="277.94" x2="16.91" y2="4.18"/>
+  </g>
+  </a>
+  <a xlink:href="back.html" target="_parent">
+  <g id="Layer_4" data-name="Layer 4" target="_parent">
+    <line class="cls-4" x1="58.31" y1="242.18" x2="58.08" y2="1.31"/>
+    <line class="cls-4" x1="119.82" y1="240.87" x2="119.59"/>
+    <ellipse class="cls-5" cx="89.21" cy="277.1" rx="42.2" ry="51.88"/>
+    <ellipse class="cls-6" cx="88.98" cy="276.16" rx="27.72" ry="37.78"/>
+    <line class="cls-7" x1="75.69" y1="245.99" x2="75.69" y2="313.94"/>
+    <line class="cls-7" x1="88.98" y1="233.09" x2="88.98" y2="323.41"/>
+    <line class="cls-7" x1="102.03" y1="245.99" x2="102.03" y2="313.94"/>
+  </g>
+  </a>
+  <a xlink:href="Head.html" target="_parent">
+  <g id="Layer_5" data-name="Layer 5">
+    <rect class="cls-8" x="0.5" y="98.52" width="178.49" height="126.88"/>
+    <circle class="cls-9" cx="44.18" cy="182.25" r="14.11"/>
+    <circle class="cls-9" cx="133.63" cy="182.25" r="14.31"/>
+    <line class="cls-10" x1="71.63" y1="98.52" x2="71.63" y2="2.18"/>
+    <line class="cls-10" x1="108.84" y1="98.52" x2="108.84" y2="2.18"/>
+  </g>
+  </a>
+</svg>
