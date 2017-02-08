@@ -33,8 +33,8 @@
         <div class="small-4 columns text-center">
             <h6>Right Shoulder</h6>
             <label>Up</label>
-            <input type="range" id="rshoulder" orient="vertical" min="-127" max="127" value="0" step="5"
-                   onchange="snapBack(this)"/>
+            <input type="range" id="rshoulder" orient="vertical" name="128/9" min="-127" max="127" value="0" step="5"
+                   onchange="snapBack(this)" oninput="saveVal(this)"/>
             <label>Down</label>
         </div>
     </div>

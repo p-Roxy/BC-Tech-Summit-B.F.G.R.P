@@ -1,3 +1,10 @@
+<?php
+include('login.php');
+
+if(isset($_SESSION['admin'])){
+header("location: selection.php");
+}
+?>
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
 <head>
@@ -12,7 +19,7 @@
 <div class="large-12 columns">
     <div class="row  mobile-open" >
         <div class="large-12 columns text-center">
-            <img src="icons/bfg@.5x.png" id="puppet">
+            <img src="icons/bfg.png" id="puppet">
             <h1>B.F.G.P.</h1>
         </div>
     </div>
@@ -47,6 +54,7 @@
                                         <input type="text" placeholder="Admin login" name="admin" required autofocus/>
                                     </div>
                                 </div>
+                                <span><?php echo $error ?></span>
                                 <div class="row">
                                     <input type="submit" class="button" name="login" value="Check-in" />
                                 </div>
