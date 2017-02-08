@@ -13,6 +13,7 @@ header("location: selection.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project: Giant Robot Puppet</title>
     <link rel="stylesheet" href="css/app.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/login.js" rel="scrpt"></script>
 </head>
 <body>

@@ -9,21 +9,37 @@ function snapBack(slider) {
 
     if (returnVal != currentVal) {
         slider.value = returnVal;
-        saveVal(slider);
+        sendVal(slider);
     }
 }
 
 /** Saves the value of a slider in a json file
  *  @param slider
  */
-function saveVal(slider) {
+// function saveVal(slider) {
+//     var controller = slider.getAttribute('id'), speed = slider.value;
+//     var prequest = new XMLHttpRequest();
+//     var path = "{{ url('applySpeed', controllerAdd = '0', motorAdd='0', _external=True}}";
+//     path = path.replace("0/0", controller);
+//     prequest.open("POST", path, false);
+//     prequest.setRequestHeader("Content-Type", "application/json");
+//     prequest.send(speed);
+//     console.log(speed);
+//     console.log(controller);
+// }
+
+function sendVal (slider) {
     var controller = slider.getAttribute('id'), speed = slider.value;
-    var prequest = new XMLHttpRequest();
-    var path = "{{ url('applySpeed', controllerAdd = '0', motorAdd='0', _external=True}}";
-    path = path.replace("0/0", controller);
-    prequest.open("POST", path, false);
-    prequest.setRequestHeader("Content-Type", "application/json");
-    prequest.send(speed);
-    console.log(speed);
-    console.log(controller);
+    console.log("controller: " + controller);
+    console.log("speed: " + speed);
+    $.ajax({
+        url: "index.php/1234/" + controller + "/" + speed ,
+        success: function(result) {
+            console.log("yep");
+        },
+        error: function() {
+            console.log("nope");
+        }
+    })        
 }
+

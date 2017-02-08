@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Head Function</title>
     <link rel="stylesheet" href="css/app.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/SliderFunction.js"></script>
 </head>
 <body>
@@ -19,7 +20,7 @@
         <div class="small-3 columns text-center">
             <h6>Left Fingers</h6>
             <label>Up</label>
-            <input type="range" class="head" id="lfingers" orient="vertical" min="-127" max="127" value="0" step="5" name="128/1" oninput="saveVal(this)" onchange="snapBack(this)"></input>
+            <input type="range" class="head" id="lfingers" orient="vertical" min="-127" max="127" value="0" step="5" name="128/1" oninput="sendVal(this)" onchange="snapBack(this)"></input>
             <label>Down</label>
         </div>
         <div class="small-3 columns text-center">
