@@ -7,40 +7,40 @@
     <title>Knees and Toes</title>
     <link rel="stylesheet" href="css/app.css">
     <script src="js/sliderfunction.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
 <div class="row">
-    <div class="small-12 columns text-center">
-        <h1>Knees and Toes</h1>
-    </div>
+    <div class="small-4 columns text-center"><h6>Left Heel </h6></div>
+    <div class="small-4 columns text-center"><h6>Left Knee</h6></div>
+    <div class="small-4 columns text-center"><h6>Right Knee</h6></div>
+    <div class="small-4 columns text-center"><h6>Right Heel</h6></div>
 </div>
 <div class="row" style="margin-top: 2%">
-    <div class="callout">
         <div class="small-3 columns text-center">
-            <h6>Left Heel</h6>
             <label>Up</label>
-            <input type="range" id="lheel" min="-127" max="127" value="0" onchange="snapBack(this)"/>
+            <input type="range" id="lheel" min="-127" max="127" value="0" step="5" oninput="sendVal(this)"
+                   onchange="snapBack(this)"/>
             <label>Down</label>
         </div>
         <div class="small-3 columns text-center">
-            <h6>Left Knee</h6>
             <label>Up</label>
-            <input type="range" id="lknee" min="-127" max="127" value="0" onchange="snapBack(this)"/>
+            <input type="range" id="lknee" min="-127" max="127" value="0" step="5" oninput="sendVal(this)"
+                   onchange="snapBack(this)"/>
             <label>Down</label>
         </div>
         <div class="small-3 columns text-center">
-            <h6>Right Knee</h6>
             <label>Up</label>
-            <input type="range" id="rknee" min="-127" max="127" value="0" onchange="snapBack(this)"/>
+            <input type="range" id="rknee" min="-127" max="127" value="0" step="5" oninput="sendVal(this)"
+                   onchange="snapBack(this)"/>
             <label>Down</label>
         </div>
         <div class="small-3 columns text-center">
-            <h6>Right Heel</h6>
             <label>Up</label>
-            <input type="range" id="rheel" min="-127" max="127" value="0" onchange="snapBack(this)"/>
+            <input type="range" id="rheel" min="-127" max="127" value="0" step="5" oninput="sendVal(this)"
+                   onchange="snapBack(this)"/>
             <label>Down</label>
         </div>
-    </div>
 </div>
 
 </body>

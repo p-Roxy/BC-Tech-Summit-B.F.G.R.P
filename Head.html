@@ -6,41 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Head Function</title>
     <link rel="stylesheet" href="css/app.css">
-    <script src="js/SliderFunction.js"></script>
+    <script src="js/sliderfunction.js"></script>
 </head>
 <body>
 <div class="row">
-    <div class="small-12 columns text-center">
-        <h1>Head</h1>
-    </div>
-</div>
-<div class="row" style="margin-top: 2%">
-    <div class="callout">
-        <div class="small-3 columns text-center">
-            <h6>Left Fingers</h6>
+    <div class="small-5 columns text-center"><h6>Head Right</h6></div>
+    <div class="small-5 columns text-center"><h6>Head Left</h6></div>
+    <div class="small-5 columns text-center">
             <label>Up</label>
-            <input type="range" class="head" id="lfingers" orient="vertical" min="-127" max="127" value="0" step="5" name="128/1" oninput="saveVal(this)" onchange="snapBack(this)"></input>
+        <input type="range" id="htilt" orient="vertical" min="-127" max="127" value="0" step="5" name="128/0"
+               orient="vertical" oninput="sendVal(this)" onchange="snapBack(this)"/>
             <label>Down</label>
         </div>
-        <div class="small-3 columns text-center">
-            <h6>Head Left</h6>
+    <div class="small-5 columns text-center">
             <label>Up</label>
-            <input type="range" id="htilt" orient="vertical" min="-127" max="127" value="0" step="5" name="128/0" onchange="snapBack(this)"></input>
+        <input type="range" id="hturn" orient="vertical" min="-127" max="127" value="0" step="5" name="128/2"
+               orient="vertical" oninput="sendVal(this)" onchange="snapBack(this)">
             <label>Down</label>
         </div>
-        <div class="small-3 columns text-center">
-            <h6>Head Right</h6>
-            <label>Up</label>
-            <input type="range" id="hturn" orient="vertical" min="-127" max="127" value="0" step="5" name="128/2" onchange="snapBack(this)"></input>
-            <label>Down</label>
-        </div>
-        <div class="small-3 columns text-center">
-            <h6>Right Fingers</h6>
-            <label>Up</label>
-            <input type="range" id="rfingers" orient="vertical" min="-127" max="127" value="0" step="5" name="128/2" onchange="snapBack(this)"></input>
-            <label>Down</label>
-        </div>
-    </div>
 </div>
 </body>
 </html>

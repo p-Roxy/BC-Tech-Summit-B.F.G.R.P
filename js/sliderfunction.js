@@ -1,7 +1,7 @@
 /** Snap to 0 function for sliders
-    @param slider
-        the unique slider obj intended to snap back
-        Sets the value of the given slider back to 0
+ @param slider
+ the unique slider obj intended to snap back
+ Sets the value of the given slider back to 0
  **/
 function snapBack(slider) {
     var returnVal = slider.defaultValue;
@@ -9,21 +9,25 @@ function snapBack(slider) {
 
     if (returnVal != currentVal) {
         slider.value = returnVal;
-        saveVal(slider);
+        sendVal(slider);
     }
 }
 
-/** Saves the value of a slider in a json file
+/** Saves the value of a slider as a url
  *  @param slider
  */
-function saveVal(slider) {
-    var controller = slider.getAttribute('id'), speed = slider.value;
-    var prequest = new XMLHttpRequest();
-    var path = "{{ url('applySpeed', controllerAdd = '0', motorAdd='0', _external=True}}";
-    path = path.replace("0/0", controller);
-    prequest.open("POST", path, false);
-    prequest.setRequestHeader("Content-Type", "application/json");
-    prequest.send(speed);
-    console.log(speed);
-    console.log(controller);
+function sendVal(slider) {
+    var controller = slider.getAttribute('id'), speed = slider.value, token = sessionStorage.getItem("token");
+    console.log("controller: " + controller);
+    console.log("speed: " + speed);
+    $.ajax({
+        url: "http://puppet" + token + "/" + controller + "/" + speed,
+        success: function (result) {
+            console.log("yep");
+        },
+        error: function () {
+            console.log("nope");
+            window.location.href = ThankYou.html
+        }
+    })
 }

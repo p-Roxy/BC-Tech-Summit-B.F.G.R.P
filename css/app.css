@@ -254,43 +254,44 @@ input {
   /* style for input range*/
 
 
-@media only screen and (orientation: portrait) {
+
   [type="range"] {
-    /*removes default webkit styles*/
-    -webkit-appearance: none;
-
-    /*fix for FF unable to apply focus style bug */
-    border: 1px solid transparent;
-
-    /*required for proper track sizing in FF*/
-    width: 25%;
-    height: 450px;
-    margin: 10% 10px;
+    -ms-transform: rotate(270deg);
+      -o-transform: rotate(270deg);
   }
+
+[type="range"]::-moz-range-thumb, [type="range"]::-moz-range-track {
+    -moz-transform: rotate(270deg);
+}
+
+@media only screen and (orientation: portrait) {
+    [type="range"]::-moz-range-track {
+        /*removes default webkit styles*/
+        -webkit-appearance: none;
+
+        /*fix for FF unable to apply focus style bug */
+        border: 1px solid transparent;
+
+        /*required for proper track sizing in FF*/
+        width: 25%;
+        height: 60vh;
+        margin: 0 auto;
+    }
 }
 
 @media only screen and (orientation: landscape) {
-  [type="range"] {
-    /*removes default webkit styles*/
-    -webkit-appearance: none;
+    [type="range"]::-moz-range-track {
+        /*removes default webkit styles*/
+        -webkit-appearance: none;
 
-    /*fix for FF unable to apply focus style bug */
-    border: 1px solid transparent;
+        /*fix for FF unable to apply focus style bug */
+        border: 1px solid transparent;
 
-    /*required for proper track sizing in FF*/
-    width: 25%;
-    height: 150px;
-    margin: 10% 10px;
-  }
-}
-
-  [type="range"] {
-    -webkit-appearance: slider-vertical;
-    -ms-transform: rotate(270deg);
-  }
-
-[type="range"][orient="vertical"]::-moz-range-thumb, [type="range"][orient="vertical"]::-moz-range-track {
-  -moz-orient:vertical;
+        /*required for proper track sizing in FF*/
+        width: 25%;
+        height: 60vh;
+        margin: 10% 10px;
+    }
 }
 
 
@@ -298,19 +299,42 @@ input[type="range"]:focus {
   outline: none;
 }
 input[type="range"]::-webkit-slider-runnable-track {
-  width: 5px;
-  height: 40px;
-  cursor: pointer;
-  border-radius: 32px;
-  border: 1px solid transparent;
+    height: 60vh;
+    width: 5px;
+
 }
+
+@media only screen and (orientation: portrait) {
+    [type="range"] {
+        /*removes default webkit styles*/
+        -webkit-appearance: slider-vertical;
+
+        /*fix for FF unable to apply focus style bug */
+        border: 1px solid transparent;
+
+        /*required for proper track sizing in FF*/
+        height: 60vh;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    [type="range"] {
+        /*removes default webkit styles*/
+        -webkit-appearance: slider-vertical;
+
+        /*fix for FF unable to apply focus style bug */
+        border: 1px solid transparent;
+
+        /*required for proper track sizing in FF*/
+        width: 25%;
+        height: 60vh;
+        margin: 10% 10px;
+    }
+}
+
 input[type="range"]::-webkit-slider-thumb {
-  background: black;
-  height: 30px;
-  width: 30px;
-  border-radius: 15px;
-}
-input[type="range"]::-webkit-media-slider-thumb {
+    -webkit-appearance: none;
   box-shadow: 1px 1px 1px #000000;
   border: 1px solid #FFFFFF;
   height: 30px;
@@ -324,7 +348,7 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
   background: midnightblue;
 }
 input[type="range"]::-moz-range-track {
-  width: 100%;
+    width: 60vh;
   height: 10px;
   cursor: pointer;
   box-shadow: 1px 1px 0 #000000;
@@ -720,7 +744,8 @@ button {
   left: -16.66667%; }
 
 .small-4 {
-  width: 33.33333%; }
+    width: 33.33333%;
+}
 
 .small-push-4 {
   position: relative;
@@ -733,7 +758,9 @@ button {
 .small-offset-4 {
   margin-left: 33.33333%; }
 
-
+.small-5 {
+    width: 50%;
+}
 
 .small-12 {
   width: 100%; }
@@ -1112,13 +1139,22 @@ label {
   margin-top: 5%;
 } @media only screen and (max-width: 786px) and (orientation: portrait) {
   .mobile-open {
-    margin-top: 20%;
+      margin-top: 25%;
   }
+
+    img#puppet {
+        height: 30vh;
+    }
 } @media only screen and (max-width: 786px) and (orientation: landscape) {
     .mobile-open {
       margin-top: 5%;
     }
   }
+
+#codeerror, #error {
+    color: #1779ba;
+    padding: 2px 0;
+}
 
 .input-group {
   padding: 10% 10%;
@@ -1143,3 +1179,27 @@ ul#puppetmarks li{
   font-size: small;
 }
 
+.codebutton {
+    height: 120px;
+    width: 120px;
+    border: 1px solid #1779ba;
+    border-radius: 50%;
+    background-color: #1779ba;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#1779ba), to(#000000));
+    background-image: -webkit-linear-gradient(top, #1779ba, #000000);
+    background-image: -moz-linear-gradient(top, #1779ba, #000000);
+    background-image: -ms-linear-gradient(top, #1779ba, #000000);
+    background-image: -o-linear-gradient(top, #1779ba, #000000);
+    box-shadow: 0 3px 8px #aaa, inset 0 2px 3px #fff;
+    color: white;
+    margin: 0 auto;
+}
+
+.codebutton:active {
+    color: gray;
+    background: #1779ba;
+}
+
+a {
+    color: black;
+}

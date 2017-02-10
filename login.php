@@ -10,7 +10,7 @@ if (isset($_POST['submit'])) {
 
         if ($admin == "rprom") {
             $_SESSION['login_user'] = $admin;
-            header("location: codegen.php"); // Redirecting to code generation
+            header("location: codegen.html"); // Redirecting to code generation
         } else {
             $error = "Not a valid admin";
         }

@@ -7,37 +7,33 @@
     <title>Body Function</title>
     <link rel="stylesheet" href="css/app.css">
     <script src="js/sliderfunction.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
-<div class="row">
-    <div class="small-12 columns text-center">
-        <h1>Shoulders and Back</h1>
-    </div>
-</div>
 <div class="row" style="margin-top: 2%">
-    <div class="callout">
-        <div class="small-4 columns text-center">
-            <h6>Left Shoulder</h6>
-            <label>Up</label>
-            <input type="range" id="lshoulder" orient="vertical" min="-127" max="127" value="0" step="5"
-                   onchange="snapBack(this)"/>
-            <label>Down</label>
-        </div>
-        <div class="small-4 columns text-center">
-            <h6>Back</h6>
-            <label>Up</label>
-            <input type="range" id="back" orient="vertical" min="-127" max="127" value="0" step="5"
-                   onchange="snapBack(this)"/>
-            <label>Down</label>
-        </div>
-        <div class="small-4 columns text-center">
-            <h6>Right Shoulder</h6>
-            <label>Up</label>
-            <input type="range" id="rshoulder" orient="vertical" name="128/9" min="-127" max="127" value="0" step="5"
-                   onchange="snapBack(this)" oninput="saveVal(this)"/>
-            <label>Down</label>
-        </div>
+    <div class="row">
+        <div class="small-4 columns text-center" style="padding: 0 10%"><h6>Left Shoulder </h6></div>
+        <div class="small-4 columns text-center"><h6>Back</h6></div>
+        <div class="small-4 columns text-center" style="padding: 0 10%"><h6>Right Shoulder</h6></div>
     </div>
+        <div class="small-4 columns text-center">
+            <label>Up</label>
+            <input type="range" id="lshoulder" min="-127" max="127" value="0" step="5" orient="vertical"
+                   oninput="sendVal(this)" onchange="snapBack(this)"/>
+            <label>Down</label>
+        </div>
+        <div class="small-4 columns text-center">
+            <label>Up</label>
+            <input type="range" id="back" min="-127" max="127" value="0" step="5" orient="vertical"
+                   oninput="sendVal(this)" onchange="snapBack(this)"/>
+            <label>Down</label>
+        </div>
+        <div class="small-4 columns text-center">
+            <label>Up</label>
+            <input type="range" id="rshoulder" name="128/9" min="-127" max="127" value="0" step="5" orient="vertical"
+                   onchange="snapBack(this)" oninput="sendVal(this)"/>
+            <label>Down</label>
+        </div>
 </div>
 </body>
 </html>

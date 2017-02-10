@@ -7,35 +7,37 @@
     <title>Right Arm Function</title>
     <link rel="stylesheet" href="css/app.css">
     <script src="js/sliderfunction.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
-    <div class="row">
-        <div class="small-12 columns text-center">
-            <h1>Right Arm</h1>
-        </div>
-    </div>
+<div class="row">
+    <div class="small-4 columns text-center" style="padding: 0 10%"><h6>Elbow</h6></div>
+    <div class="small-4 columns text-center"><h6>Hand One</h6></div>
+    <div class="small-4 columns text-center" style="padding: 0 10%"><h6>Hand Two</h6></div>
+</div>
     <div class="row" style="margin-top: 2%">
-        <div class="callout">
+
             <div class="small-4 columns text-center">
-                <h6>Elbow</h6>
                 <label>Up</label>
                 <input type="range" id="elbow" orient="vertical" min="-127" max="127" value="0" step="5"
-                       onchange="snapBack(this)"/>
+                       orient="vertical"
+                       oninput="sendVal(this)" onchange="snapBack(this)"/>
                 <label>Down</label>
             </div>
             <div class="small-4 columns text-center">
-                <h6>Hand One</h6>
                 <label>Up</label>
-                <input type="range" id="hone" orient="vertical" min="-127" max="127" value="0" step="5" onchange="snapBack(this)"/>
+                <input type="range" id="hone" orient="vertical" min="-127" max="127" value="0" step="5"
+                       orient="vertical"
+                       oninput="sendVal(this)" onchange="snapBack(this)"/>
                 <label>Down</label>
             </div>
             <div class="small-4 columns text-center">
-                <h6>Hand Two</h6>
                 <label>Up</label>
-                <input type="range" id="htwo" orient="vertical" min="-127" max="127" value="0" step="5" onchange="snapBack(this)"/>
+                <input type="range" id="htwo" orient="vertical" min="-127" max="127" value="0" step="5"
+                       orient="vertical"
+                       oninput="sendVal(this)" onchange="snapBack(this)"/>
                 <label>Down</label>
             </div>
-        </div>
     </div>
 </body>
 </html>
