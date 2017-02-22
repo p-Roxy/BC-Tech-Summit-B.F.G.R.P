@@ -258,146 +258,105 @@ input {
   [type="range"] {
     -ms-transform: rotate(270deg);
       -o-transform: rotate(270deg);
+    writing-mode: vertical-lr;
   }
 
-[type="range"]::-moz-range-thumb, [type="range"]::-moz-range-track {
-    -moz-transform: rotate(270deg);
-}
+/*input[type="range"]:focus {*/
+/*outline: none;*/
+/*}*/
+/*input[type="range"]::-webkit-slider-runnable-track {*/
+/*height: 10px;*/
+/*width: 60px;*/
+/*background-color: #3adb76;*/
+/*-webkit-appearance: none;*/
+/*}*/
 
-@media only screen and (orientation: portrait) {
-    [type="range"]::-moz-range-track {
-        /*removes default webkit styles*/
-        -webkit-appearance: none;
+/*@media only screen and (orientation: portrait) {*/
+/*input[type="range"]::-webkit-slider-runnable-track {*/
+/*!*removes default webkit styles*!*/
+/*-webkit-transform: rotate(270deg);*/
+/*transform: rotate(270deg);*/
 
-        /*fix for FF unable to apply focus style bug */
-        border: 1px solid transparent;
+/*!*fix for FF unable to apply focus style bug *!*/
+/*border: 1px solid transparent;*/
+/*}*/
+/*}*/
 
-        /*required for proper track sizing in FF*/
-        width: 25%;
-        height: 60vh;
-        margin: 0 auto;
-    }
-}
+/*@media only screen and (orientation: landscape) {*/
+/*[type="range"] {*/
+/*!*removes default webkit styles*!*/
+/*-webkit-appearance: slider-vertical;*/
 
-@media only screen and (orientation: landscape) {
-    [type="range"]::-moz-range-track {
-        /*removes default webkit styles*/
-        -webkit-appearance: none;
+/*!*fix for FF unable to apply focus style bug *!*/
+/*border: 1px solid transparent;*/
+/*}*/
+/*}*/
 
-        /*fix for FF unable to apply focus style bug */
-        border: 1px solid transparent;
-
-        /*required for proper track sizing in FF*/
-        width: 25%;
-        height: 60vh;
-        margin: 10% 10px;
-    }
-}
-
-
-input[type="range"]:focus {
-  outline: none;
-}
-input[type="range"]::-webkit-slider-runnable-track {
-    height: 60vh;
-    width: 5px;
-
-}
-
-@media only screen and (orientation: portrait) {
-    [type="range"] {
-        /*removes default webkit styles*/
-        -webkit-appearance: slider-vertical;
-
-        /*fix for FF unable to apply focus style bug */
-        border: 1px solid transparent;
-
-        /*required for proper track sizing in FF*/
-        height: 60vh;
-        margin: 0 auto;
-    }
-}
-
-@media only screen and (orientation: landscape) {
-    [type="range"] {
-        /*removes default webkit styles*/
-        -webkit-appearance: slider-vertical;
-
-        /*fix for FF unable to apply focus style bug */
-        border: 1px solid transparent;
-
-        /*required for proper track sizing in FF*/
-        width: 25%;
-        height: 60vh;
-        margin: 10% 10px;
-    }
-}
-
-input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-  box-shadow: 1px 1px 1px #000000;
-  border: 1px solid #FFFFFF;
-  height: 30px;
-  width: 30px;
-  border-radius: 15px;
-  background: #FFFFFF;
-  cursor: pointer;
-  margin-top: -13.5px;
-}
-input[type="range"]:focus::-webkit-slider-runnable-track {
-  background: midnightblue;
-}
-input[type="range"]::-moz-range-track {
-    width: 60vh;
-  height: 10px;
-  cursor: pointer;
-  box-shadow: 1px 1px 0 #000000;
-  background: midnightblue;
-  border-radius: 32px;
-  border: 1px solid transparent;
-}
-input[type="range"]::-moz-range-thumb {
-  box-shadow: 1px 1px 1px #000000;
-  border: 1px solid #FFFFFF;
-  height: 30px;
-  width: 30px;
-  border-radius: 15px;
-  background: #FFFFFF;
-  cursor: pointer;
-}
-input[type="range"]::-ms-track {
-  width: 100%;
-  height: 10px;
-  cursor: pointer;
-  animate: 0.2s;
-  background: transparent;
-  border-color: transparent;
-  color: transparent;
-}
-input[type="range"]::-ms-fill-lower {
-  background: midnightblue;
-  border: 1px solid transparent;
-  border-radius: 64px;
-}
-input[type="range"]::-ms-fill-upper {
-  background: midnightblue;
-  border: 1px solid transparent;
-  border-radius: 64px;
-}
-input[type="range"]::-ms-thumb {
-  border: 1px solid #FFFFFF;
-  height: 30px;
-  width: 30px;
-  border-radius: 15px;
-  background: #FFFFFF;
-  cursor: pointer;
-}
-input[type="range"]:focus::-ms-fill-lower {
-  background: midnightblue;
-}
-input[type="range"]:focus::-ms-fill-upper {
-  background: midnightblue;
-}
+/*input[type="range"]::-webkit-slider-thumb {*/
+/*background: transparent;*/
+/*-webkit-appearance: none;*/
+/*box-shadow: 1px 1px 1px #000000;*/
+/*border: 1px solid #FFFFFF;*/
+/*height: 30px;*/
+/*width: 30px;*/
+/*border-radius: 15px;*/
+/*cursor: pointer;*/
+/*margin-top: -13.5px;*/
+/*}*/
+/*input[type="range"]:focus::-webkit-slider-runnable-track {*/
+/*background: midnightblue;*/
+/*}*/
+/*input[type="range"]::-moz-range-track {*/
+/*width: 60vh;*/
+/*height: 10px;*/
+/*cursor: pointer;*/
+/*box-shadow: 1px 1px 0 #000000;*/
+/*background: midnightblue;*/
+/*border-radius: 32px;*/
+/*border: 1px solid transparent;*/
+/*}*/
+/*input[type="range"]::-moz-range-thumb {*/
+/*box-shadow: 1px 1px 1px #000000;*/
+/*border: 1px solid #FFFFFF;*/
+/*height: 30px;*/
+/*width: 30px;*/
+/*border-radius: 15px;*/
+/*background: #FFFFFF;*/
+/*cursor: pointer;*/
+/*}*/
+/*input[type="range"]::-ms-track {*/
+/*width: 100%;*/
+/*height: 10px;*/
+/*cursor: pointer;*/
+/*animate: 0.2s;*/
+/*background: transparent;*/
+/*border-color: transparent;*/
+/*color: transparent;*/
+/*}*/
+/*input[type="range"]::-ms-fill-lower {*/
+/*background: midnightblue;*/
+/*border: 1px solid transparent;*/
+/*border-radius: 64px;*/
+/*}*/
+/*input[type="range"]::-ms-fill-upper {*/
+/*background: midnightblue;*/
+/*border: 1px solid transparent;*/
+/*border-radius: 64px;*/
+/*}*/
+/*input[type="range"]::-ms-thumb {*/
+/*border: 1px solid #FFFFFF;*/
+/*height: 30px;*/
+/*width: 30px;*/
+/*border-radius: 15px;*/
+/*background: #FFFFFF;*/
+/*cursor: pointer;*/
+/*}*/
+/*input[type="range"]:focus::-ms-fill-lower {*/
+/*background: midnightblue;*/
+/*}*/
+/*input[type="range"]:focus::-ms-fill-upper {*/
+/*background: midnightblue;*/
+/*}*/
 
 /**
      * 1. Correct the inability to style clickable types in iOS and Safari.
@@ -805,6 +764,10 @@ button {
   .medium-pull-4 {
     position: relative;
     left: -33.33333%; }
+
+  .medium-6 {
+    width: 50%;
+  }
   .medium-offset-4 {
     margin-left: 33.33333%; }
   .medium-12 {
@@ -844,6 +807,10 @@ button {
   .large-pull-4 {
     position: relative;
     left: -33.33333%; }
+
+  .large-6 {
+    width: 50%;
+  }
   .large-12 {
     width: 100%; }
   .large-collapse .row {
@@ -1135,13 +1102,21 @@ label {
     background: #cc4b37;
     color: #fefefe; }
 
+
 .mobile-open {
   margin-top: 5%;
-} @media only screen and (max-width: 786px) and (orientation: portrait) {
+}
+
+.input-group {
+  padding: 10% 10%;
+  border: 1px solid #1779ba;
+  border-radius: 50px;
+}
+
+@media only screen and (max-width: 786px) and (orientation: portrait) {
   .mobile-open {
       margin-top: 25%;
   }
-
     img#puppet {
         height: 30vh;
     }
@@ -1149,28 +1124,35 @@ label {
     .mobile-open {
       margin-top: 5%;
     }
+
+  img#puppet {
+    height: 70px;
+    width: 70px;
   }
 
-#codeerror, #error {
-    color: #1779ba;
-    padding: 2px 0;
-}
-
-.input-group {
-  padding: 10% 10%;
-  border: 1px solid #1779ba;
-  border-radius: 50px;
-} @media only screen and (max-width: 786px) and (orientation: landscape) {
   .input-group {
     padding: 5% 5%;
   }
 }
 
-@media only screen and (orientation: landscape) {
-  #puppet {
-    height: 70px;
-    width: 70px;
+@media only screen and (min-width: 786px) {
+  .mobile-open {
+    margin-top: 2%;
   }
+
+  img#puppet {
+    height: 250px;
+    width: 250px;
+  }
+
+  .input-group {
+    padding: 2% 2%;
+  }
+}
+
+#codeerror, #error {
+    color: #1779ba;
+    padding: 2px 0;
 }
 
 ul#puppetmarks li{

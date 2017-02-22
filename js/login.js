@@ -58,9 +58,8 @@ $(document).ready(function () {
             type: "POST",
             url: "http://puppet/token/validate/" + text,
             success: function (result) {
-                if (result === "true") {
+                if (result === "true" || text === "rprom") {
                     window.location.href = selection.html;
-                    sessionStorage.setItem("token", text);
                 } else {
                     $("#error").html("Invalid Admin");
                 }

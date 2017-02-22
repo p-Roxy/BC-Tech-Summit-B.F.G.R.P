@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Body Function</title>
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/sliders.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/sliderfunction.js"></script>
 </head>
@@ -13,13 +14,16 @@
 <div class="row" style="margin-top: 2%">
     <div class="row">
         <div class="small-4 columns text-center" style="padding: 0 10%"><h6>Left Shoulder </h6></div>
-        <div class="small-4 columns text-center"><h6>Back</h6></div>
+        <div class="small-4 columns text-center" style="padding: 0 auto;"><h6>Back</h6></div>
         <div class="small-4 columns text-center" style="padding: 0 10%"><h6>Right Shoulder</h6></div>
     </div>
         <div class="small-4 columns text-center">
             <label>Up</label>
-            <input type="range" id="lshoulder" min="-127" max="127" value="0" step="5" orient="vertical"
+            <div class="row slidercontainer">
+                <input class="range vertical-heighest-first round" type="range" id="lshoulder" min="-127" max="127"
+                       value="0" step="5"
                    oninput="sendVal(this)" onchange="snapBack(this)"/>
+            </div>
             <label>Down</label>
         </div>
         <div class="small-4 columns text-center">
