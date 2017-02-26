@@ -6,41 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Knees and Toes</title>
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/sliders.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/sliderfunction.js"></script>
 </head>
 <body>
+<div class="row container">
 <div class="row">
-    <div class="small-4 columns text-center"><h6>Left Heel </h6></div>
-    <div class="small-4 columns text-center"><h6>Left Knee</h6></div>
-    <div class="small-4 columns text-center"><h6>Right Knee</h6></div>
-    <div class="small-4 columns text-center"><h6>Right Heel</h6></div>
+    <div class="small-3 columns text-center"><h6>L Heel </h6></div>
+    <div class="small-3 columns text-center"><h6>L Knee</h6></div>
+    <div class="small-3 columns text-center"><h6>R Knee</h6></div>
+    <div class="small-3 columns text-center"><h6>R Heel</h6></div>
 </div>
 <div class="row" style="margin-top: 2%">
-        <div class="small-3 columns text-center">
-            <label>Up</label>
-            <input type="range" id="lheel" min="-127" max="127" value="0" step="5" oninput="sendVal(this)"
+    <div class="small-3 columns text-center">
+        <label>Up</label>
+        <div class="slider">
+            <input type="range" id="lheel" min="-125" max="125" value="0" step="5" oninput="sendVal(this)"
                    onchange="snapBack(this)"/>
-            <label>Down</label>
         </div>
-        <div class="small-3 columns text-center">
-            <label>Up</label>
-            <input type="range" id="lknee" min="-127" max="127" value="0" step="5" oninput="sendVal(this)"
+        <label>Down</label>
+    </div>
+    <div class="small-3 columns text-center">
+        <label>Up</label>
+        <div class="slider">
+            <input type="range" id="lknee" min="-125" max="125" value="0" step="5" oninput="sendVal(this)"
                    onchange="snapBack(this)"/>
-            <label>Down</label>
         </div>
-        <div class="small-3 columns text-center">
-            <label>Up</label>
-            <input type="range" id="rknee" min="-127" max="127" value="0" step="5" oninput="sendVal(this)"
+        <label>Down</label>
+    </div>
+    <div class="small-3 columns text-center">
+        <label>Up</label>
+        <div class="slider">
+            <input type="range" id="rknee" min="-125" max="125" value="0" step="5" oninput="sendVal(this)"
                    onchange="snapBack(this)"/>
-            <label>Down</label>
         </div>
-        <div class="small-3 columns text-center">
-            <label>Up</label>
-            <input type="range" id="rheel" min="-127" max="127" value="0" step="5" oninput="sendVal(this)"
+        <label>Down</label>
+    </div>
+    <div class="small-3 columns text-center">
+        <label>Up</label>
+        <div class="slider">
+            <input type="range" id="rheel" min="-125" max="125" value="0" step="5" oninput="sendVal(this)"
                    onchange="snapBack(this)"/>
-            <label>Down</label>
         </div>
+        <label>Down</label>
+    </div>
+</div>
 </div>
 
 </body>
