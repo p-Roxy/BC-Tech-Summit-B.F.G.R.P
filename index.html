@@ -7,13 +7,13 @@
     <title>Project: Giant Robot Puppet</title>
     <link rel="stylesheet" href="css/app.css">
     <script src="js/jquery.min.js"></script>
-    <script src="js/login.js" rel="script"></script>
+    <script src="js/puppet.js" rel="script"></script>
 </head>
 <body>
 <div class="large-12 columns">
     <div class="row  mobile-open" >
         <div class="large-12 columns text-center">
-            <img src="css/icons/bfg@1x.png" id="puppet" alt="Robot Logo">
+            <img src="images/bfg.png" id="puppet" alt="Robot Logo">
             <h1>Project: Electric Puppet</h1>
         </div>
     </div>
@@ -21,63 +21,25 @@
         <div class="large-8 columns text-center">
             <div class="callout">
                 <h3>Meet Dave</h3>
-                <div class="row" id="group" style="display: none">
+                <div class="row" id="group">
                     <div class="input-group large-4 medium-6 small-8 columns text-center small-centered">
                     <form id="codeform">
                         <div class="row">
                             <div class="large-6 medium-6 small-centered columns">
-                                <input type="text" id="code" placeholder=" 5 Letter Code" name="room code"/>
+                                <input type="text" id="code" placeholder="Access Code" name="room code"/>
                             </div>
                         </div>
                         <div class="row">
                             <span id="codeerror"></span>
                         </div>
                         <div class="row">
-                            <input type="submit" class="button" value="Enter Room"/>
-                        </div>
-
-                        <div class="row">
-                            <button type="button" class="back" id="gback" onclick="buttonHelper(this)"><img
-                                    src="css/icons/back@1x.png" alt="Back"></button>
+                            <input type="submit" class="button" value="Join" />
                         </div>
                     </form>
                     </div>
                 </div>
-                <div class="row" id="admin" style="display: none">
-                    <div class="large-4 medium-6 small-6 columns text-center input-group small-centered">
-                        <h6>What's the secret password?</h6>
-                        <div class="row">
-                            <form method="post" id="adminlogin">
-                                <div class="row">
-                                    <div class="large-6 medium-6 small-5 small-centered columns">
-                                        <input type="password" placeholder=" ******" id="admintext" required autofocus/>
-                                    </div>
-                                </div>
-                                <span id="error"></span>
-                                <div class="row">
-                                    <input type="submit" class="button" name="login" value="Check-in" />
-                                </div>
-                                <div class="row">
-                                    <button class="back" id="aback" onclick="buttonHelper(this)"><img
-                                            src="css/icons/back@1x.png" alt="Back"></button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="columns small-centered login"  id="buttons">
-                    <div class="row button-group">
-                        <div class="large-4 medium-4 small-centered columns">
-                            <button class="gbutton" id="bgroup" onclick="buttonHelper(this)">Join Room</button>
-                            <button id="badmin" onclick="buttonHelper(this)">Admin Login</button>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <footer class="large-12 text-right"><p style="font-size:small; color:lightgrey; padding-right: 10px;">Powered by Raspberrry Pi</p></footer>
     </div>
 </div>
 </body>
