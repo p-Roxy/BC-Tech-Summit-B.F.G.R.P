@@ -5,15 +5,17 @@ var puppetURL = 'http://127.0.0.1';
  * @returns {*}
  */
 function getCode() {
-    $.ajax({
-        url: puppetUrl + "/token/generate",
-        success: function (result) {
-            $("#codearea").html(result);
-        },
-        error: function () {
-            console.log("nope");
-        }
-    })
+    if (window.confirm("Erase previous code?")) {
+      $.ajax({
+          url: puppetUrl + "/token/generate",
+          success: function (result) {
+              $("#codearea").html(result);
+          },
+          error: function () {
+            $("#codearea").html("Failure");
+          }
+      })
+    }
 }
 
 /** Deals with the forms on the login page
@@ -25,7 +27,6 @@ $(document).ready(function () {
     $("#codeform").submit(function (e) {
         var text = $('input#code').val();
         $.ajax({
-            type: "POST",
             url: puppetURL + "/token/validate/" + text,
             success: function (result) {
                 if (result === "false") {
@@ -43,17 +44,27 @@ $(document).ready(function () {
     });
 });
 
-
-/** Snap to 0 function for sliders
- @param slider
- the unique slider obj intended to snap back
- Sets the value of the given slider back to 0
- **/
+// snap to 0; slow down first if > 10 speed
 function snapBack(slider) {
-    var returnVal = slider.defaultValue;
+    var returnVal  = slider.defaultValue;
     var currentVal = slider.value;
 
     if (returnVal != currentVal) {
+        intReturnVal  = parseInt(returnVal);
+        intCurrentVal = parseInt(currentVal);
+
+        while(abs(intCurrentVal - intReturnVal) >= 10) {
+            if(intCurrentVal > 0) {
+              intCurrentVal = intCurrentVal - 10;
+            }
+            else if(intCurrentVal < 0) {
+              intCurrentVal = intCurrentVal + 10;
+            }
+
+            slider.value = intCurrentVal.toString();
+            sendVal(slider);
+        }
+
         slider.value = returnVal;
         sendVal(slider);
     }
@@ -67,10 +78,8 @@ function sendVal(slider) {
     $.ajax({
         url: puppetURL + "/" + token + "/" + controller + "/" + speed,
         success: function (result) {
-            console.log("yep");
         },
         error: function () {
-            console.log("nope");
             window.location.href = ThankYou.html
         }
     })
