@@ -6,38 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Right Arm Function</title>
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/sliders.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/sliderfunction.js"></script>
 </head>
 <body>
+<div class="row container">
 <div class="row">
-    <div class="small-4 columns text-center" style="padding: 0 10%"><h6>Elbow</h6></div>
+    <div class="small-4 columns text-center"><h6>Elbow</h6></div>
     <div class="small-4 columns text-center"><h6>Hand One</h6></div>
-    <div class="small-4 columns text-center" style="padding: 0 10%"><h6>Hand Two</h6></div>
+    <div class="small-4 columns text-center"><h6>Hand Two</h6></div>
 </div>
-    <div class="row" style="margin-top: 2%">
+    <div class="row">
 
-            <div class="small-4 columns text-center">
-                <label>Up</label>
-                <input type="range" id="elbow" orient="vertical" min="-127" max="127" value="0" step="5"
-                       orient="vertical"
+        <div class="small-4 columns text-center">
+            <label>Up</label>
+            <div class="slider">
+                <input type="range" id="elbow" orient="vertical" min="-125" max="125" value="0" step="5"
                        oninput="sendVal(this)" onchange="snapBack(this)"/>
-                <label>Down</label>
             </div>
-            <div class="small-4 columns text-center">
-                <label>Up</label>
-                <input type="range" id="hone" orient="vertical" min="-127" max="127" value="0" step="5"
-                       orient="vertical"
+            <label>Down</label>
+        </div>
+        <div class="small-4 columns text-center">
+            <label>Up</label>
+            <div class="slider">
+                <input type="range" id="hone" orient="vertical" min="-125" max="125" value="0" step="5"
                        oninput="sendVal(this)" onchange="snapBack(this)"/>
-                <label>Down</label>
             </div>
-            <div class="small-4 columns text-center">
-                <label>Up</label>
-                <input type="range" id="htwo" orient="vertical" min="-127" max="127" value="0" step="5"
-                       orient="vertical"
+            <label>Down</label>
+        </div>
+        <div class="small-4 columns text-center">
+            <label>Up</label>
+            <div class="slider">
+                <input type="range" id="htwo" orient="vertical" min="-125" max="125" value="0" step="5"
                        oninput="sendVal(this)" onchange="snapBack(this)"/>
-                <label>Down</label>
             </div>
+            <label>Down</label>
+        </div>
     </div>
+</div>
 </body>
 </html>

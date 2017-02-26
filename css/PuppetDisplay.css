@@ -1,98 +1,115 @@
 .head {
-    max-height: 30px;
-    max-width : 30px;
+    max-height: 70px;
+    max-width: 100px;
     border: 1px dotted #4ec9f5;
     background-color: #4ec9f5;
-    margin: 2px auto;}
-    @media only screen and (max-width: 786px){
+    margin: 10px auto;
+}
+
+@media only screen and (orientation: portrait) {
         .head {
-            height: 5px;
-            width: 5px;
+            height: 30px;
+            width: 70px;
         }
     }
-    @media only screen and (min-width: 786px) {
+
+@media only screen and (orientation: landscape) {
         .head {
-            height: 20px;
-            width: 20px;
+            height: 30px;
+            width: 90px;
+            margin: 15px auto;
         }
     }
 
 .torso {
-    max-height: 30px;
-    max-width : 30px;
+    max-height: 70px;
+    max-width: 100px;
     border: 1px dotted #662d91;
     background-color: #662d91;
-    margin: 2px auto;}
-@media only screen and (max-width: 786px){
+    margin: 10px auto;
+}
+
+@media only screen and (orientation: portrait) {
     .torso {
-        height: 5px;
-        width: 5px;
+        height: 30px;
+        width: 70px;
     }
 }
-@media only screen and (min-width: 786px) {
-    .torso {
-        height: 20px;
-        width: 20px;
 
+@media only screen and (orientation: landscape) {
+    .torso {
+        height: 30px;
+        width: 90px;
+        margin: 15px auto;
     }
 }
 
 .larm {
-    max-height: 30px;
-    max-width : 30px;
+    max-height: 70px;
+    max-width: 100px;
     border: 1px dotted #ee2a7b;
     background-color: #ee2a7b;
-    margin: 2px auto;}
-@media only screen and (max-width: 786px){
+    margin: 10px auto;
+}
+
+@media only screen and (orientation: portrait) {
     .larm {
-        height: 5px;
-        width: 5px;
+        height: 30px;
+        width: 70px;
     }
 }
-@media only screen and (min-width: 786px) {
-    .larm {
-        height: 20px;
-        width: 20px;
 
+@media only screen and (orientation: landscape) {
+    .larm {
+        height: 30px;
+        width: 90px;
+        margin: 15px auto;
     }
 }
 
 .rarm {
-    max-height: 30px;
-    max-width : 30px;
+    max-height: 70px;
+    max-width: 100px;
     border: 1px dotted #f7941d;
     background-color: #f7941d;
-    margin: 2px auto;}
-@media only screen and (max-width: 786px){
+    margin: 10px auto;
+}
+
+@media only screen and (orientation: portrait) {
     .rarm {
-        height: 5px;
-        width: 5px;
+        height: 30px;
+        width: 70px;
     }
 }
-@media only screen and (min-width: 786px) {
-    .rarm {
-        height: 20px;
-        width: 20px;
 
+@media only screen and (orientation: landscape) {
+    .rarm {
+        height: 30px;
+        width: 90px;
+        margin: 15px auto;
     }
 }
 
 .legs {
-    max-height: 30px;
-    max-width : 30px;
+    max-height: 70px;
+    max-width: 100px;
     border: 1px dotted #8dc63f;
     background-color: #8dc63f;
-    margin: 2px auto;}
-@media only screen and (max-width: 786px){
+    margin: 10px auto;
+}
+
+@media only screen and (orientation: portrait) {
     .legs {
-        height: 5px;
-        width: 5px;
+        height: 30px;
+        width: 70px;
     }
 }
-@media only screen and (min-width: 786px) {
+
+@media only screen and (orientation: landscape) {
     .legs {
-        height: 20px;
-        width: 20px;
+        height: 30px;
+        width: 90px;
+        margin: 15px auto;
 
     }
 }

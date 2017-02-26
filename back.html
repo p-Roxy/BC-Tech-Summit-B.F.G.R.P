@@ -11,31 +11,35 @@
     <script src="js/sliderfunction.js"></script>
 </head>
 <body>
-<div class="row" style="margin-top: 2%">
+<div class="row container">
     <div class="row">
-        <div class="small-4 columns text-center" style="padding: 0 10%"><h6>Left Shoulder </h6></div>
+        <div class="small-4 columns text-center" style="padding: 0 auto"><h6>L Shoulder </h6></div>
         <div class="small-4 columns text-center" style="padding: 0 auto;"><h6>Back</h6></div>
-        <div class="small-4 columns text-center" style="padding: 0 10%"><h6>Right Shoulder</h6></div>
+        <div class="small-4 columns text-center" style="padding: 0 auto"><h6>R Shoulder</h6></div>
     </div>
         <div class="small-4 columns text-center">
             <label>Up</label>
-            <div class="row slidercontainer">
-                <input class="range vertical-heighest-first round" type="range" id="lshoulder" min="-127" max="127"
-                       value="0" step="5"
+            <div class="slider">
+                <input type="range" id="lshoulder" min="-125" max="125"
+                       value="0" step="5" orient="vertical"
                    oninput="sendVal(this)" onchange="snapBack(this)"/>
             </div>
             <label>Down</label>
         </div>
         <div class="small-4 columns text-center">
             <label>Up</label>
-            <input type="range" id="back" min="-127" max="127" value="0" step="5" orient="vertical"
+            <div class="slider">
+                <input type="range" id="back" min="-125" max="125" value="0" step="5"
                    oninput="sendVal(this)" onchange="snapBack(this)"/>
+            </div>
             <label>Down</label>
         </div>
         <div class="small-4 columns text-center">
             <label>Up</label>
-            <input type="range" id="rshoulder" name="128/9" min="-127" max="127" value="0" step="5" orient="vertical"
+            <div class="slider">
+                <input type="range" id="rshoulder" min="-125" max="125" value="0" step="5" orient="vertical"
                    onchange="snapBack(this)" oninput="sendVal(this)"/>
+            </div>
             <label>Down</label>
         </div>
 </div>
