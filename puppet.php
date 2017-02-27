@@ -23,6 +23,7 @@ try {
   $code = substr($message, 0, 3);
   header($_SERVER["SERVER_PROTOCOL"] . " " . $message);
   http_response_code((int)$code);
+  echo $response;
 }
 catch (Exception $e) {
   header($_SERVER["SERVER_PROTOCOL"] . " 500 Server Error");
