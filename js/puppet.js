@@ -1,4 +1,4 @@
-var puppetURL = 'http://127.0.0.1/puppet.php?param=';
+window.puppetURL = 'http://127.0.0.1/puppet.php?param=';
 
 /** Gets code from server and returns the value of the button
  * @param
@@ -7,7 +7,7 @@ var puppetURL = 'http://127.0.0.1/puppet.php?param=';
 function getCode() {
     if (window.confirm("Erase previous code?")) {
       $.ajax({
-          url: puppetUrl + "/token/generate",
+          url: window.puppetURL + "/token/generate",
           success: function (result) {
               $("#codearea").html(result);
           },
@@ -27,7 +27,7 @@ $(document).ready(function () {
     $("#codeform").submit(function (e) {
         var text = $('input#code').val();
         $.ajax({
-            url: puppetURL + "/token/validate/" + text,
+            url: window.puppetURL + "/token/validate/" + text,
             success: function (result) {
               // content back, was admin code and this is the new code
               if (result !== '') {
@@ -81,7 +81,7 @@ function snapBack(slider) {
 function sendVal(slider) {
     var controller = slider.getAttribute('id'), speed = slider.value, token = sessionStorage.getItem("token");
     $.ajax({
-        url: puppetURL + "/" + token + "/" + controller + "/" + speed,
+        url: window.puppetURL + "/" + token + "/" + controller + "/" + speed,
         success: function (result) {
         },
         error: function () {
