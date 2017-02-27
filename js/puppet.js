@@ -1,4 +1,8 @@
-window.puppetURL = 'http://127.0.0.1/puppet.php?param=';
+var ip = require{'./ip.js');
+var ip = ip();
+
+window.puppetURL = 'http://' + ip + ':8080';
+//http://192.168.1.64:8080/puppet.php?param=
 
 /** Gets code from server and returns the value of the button
  * @param
