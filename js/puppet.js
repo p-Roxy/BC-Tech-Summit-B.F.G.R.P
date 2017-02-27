@@ -57,7 +57,7 @@ function snapBack(slider) {
         intReturnVal  = parseInt(returnVal);
         intCurrentVal = parseInt(currentVal);
 
-        while(abs(intCurrentVal - intReturnVal) >= 10) {
+        while(Math.abs(intCurrentVal - intReturnVal) >= 10) {
             if(intCurrentVal > 0) {
               intCurrentVal = intCurrentVal - 10;
             }
