@@ -7,7 +7,7 @@ window.puppetURL = 'http://127.0.0.1/puppet.php?param=';
 function getCode() {
     if (window.confirm("Erase previous code?")) {
       $.ajax({
-          url: window.puppetURL + "/token/generate",
+          url: window.puppetURL + "/" + sessionStorage.getItem("token") + "/token/generate",
           success: function (result) {
               $("#codearea").html(result);
           },
@@ -31,6 +31,7 @@ $(document).ready(function () {
             success: function (result) {
               // content back, was admin code and this is the new code
               if (result !== '') {
+                sessionStorage.setItem("token", text);
                 window.location.href = 'codegen.html';
               }
               // valid - empty result, but not a HTTP error
