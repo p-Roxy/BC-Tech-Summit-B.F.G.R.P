@@ -1,4 +1,4 @@
-var puppetURL = 'http://127.0.0.1';
+var puppetURL = 'http://127.0.0.1/puppet.php?param=';
 
 /** Gets code from server and returns the value of the button
  * @param
@@ -29,12 +29,17 @@ $(document).ready(function () {
         $.ajax({
             url: puppetURL + "/token/validate/" + text,
             success: function (result) {
-                if (result === "false") {
-                    window.location.href = selection.html;
-                    sessionStorage.setItem("token", text);
-                } else {
-                    $("#codeerror").html("Invalid Code");
-                }
+              // content back, was admin code and this is the new code
+              if (result !== '') {
+                window.location.href = 'codegen.html';
+              }
+              // valid - empty result, but not a HTTP error
+              else if (result !== text) {
+                sessionStorage.setItem("token", text);
+                window.location.href = 'selection.html';
+              } else {
+                $("#codeerror").html("Invalid Code");
+              }
             },
             error: function () {
                 $("#codeerror").html("Invalid Code");
