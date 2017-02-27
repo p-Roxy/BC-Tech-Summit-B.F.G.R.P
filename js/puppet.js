@@ -84,7 +84,7 @@ function sendVal(slider) {
         success: function (result) {
         },
         error: function () {
-            window.location.href = ThankYou.html
+            window.location.href = 'ThankYou.html'
         }
     })
 }
