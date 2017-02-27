@@ -1092,6 +1092,10 @@ a {
     color: white;
 }
 
-#codeform submit.button {
+#codeform input.button {
   color: black;
+}
+
+#codeform input#code {
+  text-align: center;
 }
