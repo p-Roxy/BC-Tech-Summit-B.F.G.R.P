@@ -5,17 +5,15 @@ window.puppetURL = 'http://127.0.0.1/puppet.php?param=';
  * @returns {*}
  */
 function getCode() {
-    if (window.confirm("Erase previous code?")) {
-      $.ajax({
-          url: window.puppetURL + "/" + sessionStorage.getItem("token") + "/token/generate",
-          success: function (result) {
-              $("#codearea").html(result);
-          },
-          error: function () {
-            $("#codearea").html("Failure");
-          }
-      })
-    }
+    $.ajax({
+        url: window.puppetURL + "/" + sessionStorage.getItem("token") + "/token/generate",
+        success: function (result) {
+            $("#codearea").html(result);
+        },
+        error: function () {
+          $("#codearea").html("Failure");
+        }
+    });
 }
 
 /** Deals with the forms on the login page
