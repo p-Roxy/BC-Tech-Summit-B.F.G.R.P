@@ -830,8 +830,8 @@ h1 {
   font-size: 1.5rem;
   line-height: 1.4;
   margin-top: 0;
-  margin-bottom: 0.5rem; 
-  
+  margin-bottom: 0.5rem;
+
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 100;
@@ -1083,27 +1083,19 @@ label {
     padding: 2px 0;
 }
 
-.codebutton {
-    width: 100px;
-    height: 100px;
-    border: 1px solid #1779ba;
-    border-radius: 50%;
-    background-color: #1779ba;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#1779ba), to(#000000));
-    background-image: -webkit-linear-gradient(top, #1779ba, #000000);
-    background-image: -moz-linear-gradient(top, #1779ba, #000000);
-    background-image: -ms-linear-gradient(top, #1779ba, #000000);
-    background-image: -o-linear-gradient(top, #1779ba, #000000);
-    box-shadow: 0 3px 8px #aaa, inset 0 2px 3px #fff;
-    color: white;
-    margin: 0 auto;
-}
-
-.codebutton:active {
-    color: gray;
-    background: #1779ba;
-}
-
 a {
     color: white;
+}
+
+#codeform input.button {
+  color: black;
+}
+
+#codeform input#code {
+  text-align: center;
+}
+
+#codearea {
+  font-weight: bold;
+  font-size: 5rem;
 }

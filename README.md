@@ -1,4 +1,7 @@
-# BC-Tech-Summit-B.F.G.R.P
+# Puppet Frontend
 
+Installation:
 
-Website for BC Tech project
+Place all files in a web-accessable directory on the target system.
+
+Update js/puppet.js with the ip/address of the backend system.
