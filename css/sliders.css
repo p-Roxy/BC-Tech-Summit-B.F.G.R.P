@@ -55,8 +55,6 @@ label {
         }
 
         #legHeelLeft, #legHeelRight, #legKneeLeft, #legKneeRight {
-            width: 500px;
-            margin: 132px auto;
             transform: rotate(270deg) translateY(-130px);
             -webkit-transform: rotate(270deg) translateY(-130px);
             -ms-transform: rotate(270deg) translateY(-130px);
@@ -67,7 +65,7 @@ label {
         input[type="range"] {
             -webkit-appearance: none;
             -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-            width: 400px;
+            width: 60vh;
             height: 40px;
             margin: 50px auto;
             border: none;
@@ -95,20 +93,19 @@ label {
 
 
         #legHeelLeft, #legHeelRight, #legKneeLeft, #legKneeRight {
-            margin: 250px auto;
-            transform: rotate(270deg) translateY(-239px);
-            -webkit-transform: rotate(270deg) translateY(-239px);
-            -ms-transform: rotate(270deg) translateY(-239px);
-            -o-transform: rotate(270deg) translateY(-239px);
-            -moz-transform: rotate(270deg) translateY(-239px);
+            transform: rotate(270deg) translateY(-16.8vh);
+            -webkit-transform: rotate(270deg) translateY(-16.8vh);
+            -ms-transform: rotate(270deg) translateY(-16.8vh);
+            -o-transform: rotate(270deg) translateY(-16.8vh);
+            -moz-transform: rotate(270deg) translateY(-16.8vh);
         }
 
         input[type="range"] {
             -webkit-appearance: none;
             -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-            width: 750px;
+            width: 65vh;
             height: 40px;
-            margin: 200px auto;
+            margin: 5vh auto;
             border: none;
             padding: 1px 2px;
             border-radius: 20px;
@@ -117,11 +114,11 @@ label {
             -webkit-box-shadow: inset 0 1px 0 0 #0d0e0f, inset 0 -1px 0 0 #3a3d42;
             outline: none; /* no focus outline */
             align-content: center;
-            transform: rotate(270deg) translateY(-190px);
-            -webkit-transform: rotate(270deg) translateY(-190px);
-            -ms-transform: rotate(270deg) translateY(-190px);
-            -o-transform: rotate(270deg) translateY(-190px);
-            -moz-transform: rotate(270deg) translateY(-190px);
+            transform: rotate(270deg) translateY(-6vh);
+            -webkit-transform: rotate(270deg) translateY(-6vh);
+            -ms-transform: rotate(270deg) translateY(-6vh);
+            -o-transform: rotate(270deg) translateY(-6vh);
+            -moz-transform: rotate(270deg) translateY(-6vh);
 
         }
     }
@@ -129,7 +126,7 @@ label {
 
 @media only screen and (orientation: portrait) {
     body {
-        background-image: url("icons/robotbkg.svg");
+        background-image: url("/images/robotbkg.svg");
         background-repeat: no-repeat;
         background-size: 40%;
         background-position: center top;
@@ -138,25 +135,25 @@ label {
 
     @media (max-width: 728px) {
         .container {
-            margin-top: 15%;
+            margin-top: 10%;
             overflow: hidden;
         }
 
 
         #legHeelLeft, #legHeelRight, #legKneeLeft, #legKneeRight {
-            transform: rotate(270deg) translateY(-134px);
-            -webkit-transform: rotate(270deg) translateY(-134px);
-            -ms-transform: rotate(270deg) translateY(-134px);
-            -o-transform: rotate(270deg) translateY(-134px);
-            -moz-transform: rotate(270deg) translateY(-134px);
+            transform: rotate(270deg) translateY(-23.5vh);
+            -webkit-transform: rotate(270deg) translateY(-23.5vh);
+            -ms-transform: rotate(270deg) translateY(-23.5vh);
+            -o-transform: rotate(270deg) translateY(-23.5vh);
+            -moz-transform: rotate(270deg) translateY(-23.5vh);
         }
 
         input[type="range"] {
             -webkit-appearance: none;
             -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-            width: 350px;
+            width: 60vh;
             height: 40px;
-            margin: 125px auto;
+            margin: 23vh auto;
             border: none;
             padding: 1px 2px;
             border-radius: 20px;
@@ -165,11 +162,11 @@ label {
             -webkit-box-shadow: inset 0 1px 0 0 #0d0e0f, inset 0 -1px 0 0 #3a3d42;
             outline: none; /* no focus outline */
             align-content: center;
-            transform: rotate(270deg) translateY(-112.5px);
-            -webkit-transform: rotate(270deg) translateY(-120.5px);
-            -ms-transform: rotate(270deg) translateY(-120.5px);
-            -o-transform: rotate(270deg) translateY(-120.5px);
-            -moz-transform: rotate(270deg) translateY(-120.5px);
+            transform: rotate(270deg) translateY(-21vh);
+            -webkit-transform: rotate(270deg) translateY(-21vh);
+            -ms-transform: rotate(270deg) translateY(-21vh);
+            -o-transform: rotate(270deg) translateY(-21vh);
+            -moz-transform: rotate(270deg) translateY(-21vh);
 
         }
     }
@@ -180,19 +177,19 @@ label {
         }
 
         #legHeelLeft, #legHeelRight, #legKneeLeft, #legKneeRight {
-            transform: rotate(270deg) translateY(-262px);
-            -webkit-transform: rotate(270deg) translateY(-262px);
-            -ms-transform: rotate(270deg) translateY(-262px);
-            -o-transform: rotate(270deg) translateY(-262px);
-            -moz-transform: rotate(270deg) translateY(-262px);
+            transform: rotate(270deg) translateY(-26.5vh);
+            -webkit-transform: rotate(270deg) translateY(-26.5vh);
+            -ms-transform: rotate(270deg) translateY(-26.5vh);
+            -o-transform: rotate(270deg) translateY(-26.5vh);
+            -moz-transform: rotate(270deg) translateY(-26.5vh);
         }
 
         input[type="range"] {
             -webkit-appearance: none;
             -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-            width: 700px;
+            width: 70vh;
             height: 40px;
-            margin: 250px auto;
+            margin: 27vh auto;
             border: none;
             padding: 1px 2px;
             border-radius: 20px;
@@ -201,12 +198,11 @@ label {
             -webkit-box-shadow: inset 0 1px 0 0 #0d0e0f, inset 0 -1px 0 0 #3a3d42;
             outline: none; /* no focus outline */
             align-content: center;
-            transform: rotate(270deg) translateY(-235px);
-            -webkit-transform: rotate(270deg) translateY(-235px);
-            -ms-transform: rotate(270deg) translateY(-235px);
-            -o-transform: rotate(270deg) translateY(-235px);
-            -moz-transform: rotate(270deg) translateY(-235px);
-
+            transform: rotate(270deg) translateY(-24vh);
+            -webkit-transform: rotate(270deg) translateY(-24vh);
+            -ms-transform: rotate(270deg) translateY(-24vh);
+            -o-transform: rotate(270deg) translateY(-24vh);
+            -moz-transform: rotate(270deg) translateY(-24vh);
         }
     }
     @media (min-width: 810px) {
@@ -216,19 +212,19 @@ label {
         }
 
         #legHeelLeft, #legHeelRight, #legKneeLeft, #legKneeRight {
-            transform: rotate(270deg) translateY(-231px);
-            -webkit-transform: rotate(270deg) translateY(-231px);
-            -ms-transform: rotate(270deg) translateY(-231px);
-            -o-transform: rotate(270deg) translateY(-231px);
-            -moz-transform: rotate(270deg) translateY(-231px);
+            transform: rotate(270deg) translateY(-28.7vh);
+            -webkit-transform: rotate(270deg) translateY(-28.7vh);
+            -ms-transform: rotate(270deg) translateY(-28.7vh);
+            -o-transform: rotate(270deg) translateY(-28.7vh);
+            -moz-transform: rotate(270deg) translateY(-28.7vh);
         }
 
         input[type="range"] {
             -webkit-appearance: none;
             -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-            width: 700px;
+            width: 75vh;
             height: 40px;
-            margin: 250px auto;
+            margin: 30vh auto;
             border: none;
             padding: 1px 2px;
             border-radius: 20px;
