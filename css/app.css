@@ -892,6 +892,21 @@ input[type="text"], input[type="password"] {
     background-color:#1f1f1f;
 }
 
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input:focus::-moz-placeholder {
+  color: transparent; }
+
+input:focus:-ms-input-placeholder {
+  color: transparent; }
+
+input:placeholder,
+textarea::placeholder {
+  color: transparent; }
+
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: #cacaca;
@@ -956,7 +971,7 @@ label {
 
 @media only screen and (max-width: 786px) and (orientation: portrait) {
   .mobile-open {
-      margin-top: 15%;
+      margin-top: 10%;
   }
     img#puppet {
         height: 28vh;

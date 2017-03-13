@@ -3,7 +3,7 @@
     background-color: #4ec9f5;
 }
 .head {
-    transform: translateX(-50%) translateY(10vh);
+    transform: translateX(-50%) translateY(0vh);
 }
 .torso, #torso {
     border: 1px dotted #662d91;
@@ -11,7 +11,7 @@
 }
 
 .torso {
-    transform: translateX(-50%) translateY(40vh);
+    transform: translateX(-50%) translateY(30vh);
 }
 
 .larm, #larm {
@@ -19,7 +19,7 @@
     background-color: #ee2a7b;
 }
 .larm {
-    transform: translateX(-50%) translateY(25vh);
+    transform: translateX(-50%) translateY(15vh);
 }
 
 .rarm, #rarm {
@@ -27,7 +27,7 @@
     background-color: #f7941d;
 }
 .rarm {
-    transform: translateX(-50%) translateY(25vh);
+    transform: translateX(-50%) translateY(15vh);
 }
 
 .legs, #legs {
@@ -35,7 +35,7 @@
     background-color: #8dc63f;
 }
 .legs {
-    transform: translateX(-50%) translateY(50vh);
+    transform: translateX(-50%) translateY(40vh);
 
 }
 
