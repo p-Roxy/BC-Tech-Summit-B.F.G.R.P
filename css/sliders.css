@@ -18,10 +18,13 @@ label {
     padding: 0 auto;
 }
 
+.container {
+    overflow: hidden;
+}
+
 @media only screen and (orientation: landscape) {
     .container {
         margin-top: 3%;
-        overflow: hidden;
     }
 
     @media (max-width: 728px) {
@@ -51,7 +54,6 @@ label {
     @media (min-width: 728px) {
         .container {
             margin-top: 10%;
-            overflow: hidden;
         }
 
         #legHeelLeft, #legHeelRight, #legKneeLeft, #legKneeRight {
@@ -87,8 +89,7 @@ label {
 
     @media (min-width: 1026px) {
         .container {
-            margin-top: 5%;
-            overflow: hidden;
+            margin-top: 10%;
         }
 
 
@@ -134,10 +135,6 @@ label {
     }
 
     @media (max-width: 728px) {
-        .container {
-            margin-top: 10%;
-            overflow: hidden;
-        }
 
 
         #legHeelLeft, #legHeelRight, #legKneeLeft, #legKneeRight {
@@ -173,7 +170,6 @@ label {
     @media (min-width: 728px) {
         .container {
             margin-top: 10%;
-            overflow: hidden;
         }
 
         #legHeelLeft, #legHeelRight, #legKneeLeft, #legKneeRight {
@@ -208,7 +204,6 @@ label {
     @media (min-width: 810px) {
         .container {
             margin-top: 10%;
-            overflow: hidden;
         }
 
         #legHeelLeft, #legHeelRight, #legKneeLeft, #legKneeRight {
