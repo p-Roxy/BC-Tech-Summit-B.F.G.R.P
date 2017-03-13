@@ -4,6 +4,10 @@
     border: 1px dotted #4ec9f5;
     background-color: #4ec9f5;
     margin: 10px auto;
+    transform: translateX(-50%) translateY(10vh);
+}
+#head {
+    border-color: #4ec9f5;
 }
 
 @media only screen and (orientation: portrait) {
@@ -27,6 +31,11 @@
     border: 1px dotted #662d91;
     background-color: #662d91;
     margin: 10px auto;
+    transform: translateX(-50%) translateY(40vh);
+}
+#torso {
+
+    border-color: #662d91;
 }
 
 @media only screen and (orientation: portrait) {
@@ -50,6 +59,11 @@
     border: 1px dotted #ee2a7b;
     background-color: #ee2a7b;
     margin: 10px auto;
+    transform: translateX(-50%) translateY(25vh);
+}
+#larm {
+
+    border-color: #ee2a7b;
 }
 
 @media only screen and (orientation: portrait) {
@@ -73,6 +87,11 @@
     border: 1px dotted #f7941d;
     background-color: #f7941d;
     margin: 10px auto;
+    transform: translateX(-50%) translateY(25vh);
+}
+#rarm {
+
+    border-color: #f7941d;
 }
 
 @media only screen and (orientation: portrait) {
@@ -96,6 +115,11 @@
     border: 1px dotted #8dc63f;
     background-color: #8dc63f;
     margin: 10px auto;
+    transform: translateX(-50%) translateY(50vh);
+}
+#legs {
+    border-color: #8dc63f;
+
 }
 
 @media only screen and (orientation: portrait) {
@@ -114,7 +138,18 @@
     }
 }
 
+
 a:active {
     box-shadow: black;
 }
 
+.callout {
+    padding: 0;
+}
+.puppetLine {
+    width: 1px;
+    height: 70vh;
+    border: 1px solid white;
+    display: block;
+    margin: 0 auto;
+}
