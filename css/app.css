@@ -1045,7 +1045,7 @@ label {
 
 @media only screen and (max-width: 786px) and (orientation: portrait) {
   .mobile-open {
-      margin-top: 25%;
+      margin-top: 15%;
   }
     img#puppet {
         height: 30vh;
