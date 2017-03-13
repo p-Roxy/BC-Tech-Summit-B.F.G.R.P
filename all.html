@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knees and Toes</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/slidersall.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/puppet.js"></script>
+</head>
+<body>
+<div class="row container">
+    <div class="row">
+        <div class="small-0 columns text-center"><h6>L Heel </h6></div>
+        <div class="small-0 columns text-center"><h6>L Knee</h6></div>
+        <div class="small-0 columns text-center" ><h6>Elbow</h6></div>
+        <div class="small-0 columns text-center"><h6>Hand One</h6></div>
+        <div class="small-0 columns text-center" ><h6>Hand Two</h6></div>
+        <div class="small-0 columns text-center" ><h6>L Shoulder </h6></div>
+        <div class="small-0 columns text-center" ><h6>Back</h6></div>
+        <div class="small-0 columns text-center"><h6>Head Left</h6></div>
+        <div class="small-0 columns text-center"><h6>Head Right</h6></div>
+        <div class="small-0 columns text-center" ><h6>R Shoulder</h6></div>
+        <div class="small-0 columns text-center"><h6>Elbow</h6></div>
+        <div class="small-0 columns text-center"><h6>Hand One</h6></div>
+        <div class="small-0 columns text-center"><h6>Hand Two</h6></div>
+        <div class="small-0 columns text-center"><h6>R Knee</h6></div>
+        <div class="small-0 columns text-center"><h6>R Heel</h6></div>
+    </div>
+    <div class="row" style="margin-top: 2%">
+        <div class="small-0 columns text-center">
+            <label>Up</label>
+            <div class="slider">
+                <input type="range" id="legHeelLeft" min="-125" max="125" value="0" step="5" oninput="sendVal(this)"
+                       onchange="snapBack(this)"/>
+            </div>
+            <label>Down</label>
+        </div>
+        <div class="small-0 all columns text-center">
+            <label>Up</label>
+            <div class="slider">
+                <input type="range" id="legKneeLeft" min="-125" max="125" value="0" step="5" oninput="sendVal(this)"
+                       onchange="snapBack(this)"/>
+            </div>
+            <label>Down</label>
+        </div>
+        <div class="small-0 all columns text-center">
+            <label>Up</label>
+            <div class="slider">
+                <input type="range" id="armHandTwoLeft" min="-125" max="125" value="0" step="5"
+                       oninput="sendVal(this)" onchange="snapBack(this)"/>
+            </div>
+            <label>Down</label>
+        </div>
+        <div class="small-0 all columns text-center">
+            <label>Up</label>
+            <div class="slider">
+                <input type="range"  id="armHandOneLeft" min="-125" max="125" value="0" step="5"
+                       oninput="sendVal(this)" onchange="snapBack(this)"/>
+            </div>
+            <label>Down</label>
+        </div>
+        <div class="small-0 all columns text-center">
+            <label>Up</label>
+            <div class="slider">
+                <input type="range" id="armElbowLeft" min="-125" max="125" value="0" step="5"
+                       oninput="sendVal(this)" onchange="snapBack(this)"/>
+            </div>
+            <label>Down</label>
+        </div>
+        <div class="small-0 all columns text-center">
+            <label>Up</label>
+            <div class="slider">
+                <input type="range" id="backShoulderLeft" min="-125" max="125"
+                       value="0" step="5"
+                       oninput="sendVal(this)" onchange="snapBack(this)"/>
+            </div>
+            <label>Down</label>
+        </div>
+        <div class="small-0 all columns text-center">
+            <label>Up</label>
+            <div class="slider">
+                <input type="range" id="back" min="-125" max="125" value="0" step="5"
+                       oninput="sendVal(this)" onchange="snapBack(this)"/>
+            </div>
+            <label>Down</label>
+        </div>
+        <div class="small-0 all columns text-center">
+            <label>Up</label>
+            <div class="slider">
+                <input type="range" id="headTilt" min="-125" max="125" value="0" step="5"
+                       oninput="sendVal(this)" onchange="snapBack(this)"/>
+            </div>
+            <label>Down</label>
+        </div>
+        <div class="small-0 all columns text-center">
+            <label>Up</label>
+            <div class="slider">
+                <input type="range" id="headTurn" min="-125" max="125" value="0" step="5"
+                       oninput="sendVal(this)" onchange="snapBack(this)">
+            </div>
+            <label>Down</label>
+        </div>
+        <div class="small-0 all columns text-center">
+            <label>Up</label>
+            <div class="slider">
+                <input type="range" id="backShoulderRight" min="-125" max="125" value="0" step="5"
+                       onchange="snapBack(this)" oninput="sendVal(this)"/>
+            </div>
+            <label>Down</label>
+        </div>
+        <div class="small-0 all columns text-center">
+                <label>Up</label>
+                <div class="slider">
+                    <input type="range" id="armElbowRight" min="-125" max="125" value="0" step="5"
+                           oninput="sendVal(this)" onchange="snapBack(this)"/>
+                </div>
+                <label>Down</label>
+            </div>
+        <div class="small-0 all columns text-center">
+                <label>Up</label>
+                <div class="slider">
+                    <input type="range" id="armHandOneRight" min="-125" max="125" value="0" step="5"
+                           oninput="sendVal(this)" onchange="snapBack(this)"/>
+                </div>
+                <label>Down</label>
+            </div>
+        <div class="small-0 all columns text-center">
+                <label>Up</label>
+                <div class="slider">
+                    <input type="range" id="armHandTwoRight" min="-125" max="125" value="0" step="5"
+                           oninput="sendVal(this)" onchange="snapBack(this)"/>
+                </div>
+                <label>Down</label>
+            </div>
+        <div class="small-0 all columns text-center">
+            <label>Up</label>
+            <div class="slider">
+                <input type="range" id="legKneeRight" min="-125" max="125" value="0" step="5" oninput="sendVal(this)"
+                       onchange="snapBack(this)"/>
+            </div>
+            <label>Down</label>
+        </div>
+        <div class="small-0 all columns text-center">
+            <label>Up</label>
+            <div class="slider">
+                <input type="range" id="legHeelRight" min="-125" max="125" value="0" step="5" oninput="sendVal(this)"
+                       onchange="snapBack(this)"/>
+            </div>
+            <label>Down</label>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
