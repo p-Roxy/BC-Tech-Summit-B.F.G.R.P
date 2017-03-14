@@ -45,10 +45,14 @@
     margin: 10px auto;
 }
 @media only screen and (orientation: portrait) {
-        .head, .larm, .legs, .torso, .rarm {
+        .head, .larm, .rarm {
             height: 50px;
             width: 80px;
             padding: 10px 10px;
+        }
+        .torso, .legs {
+            height: 50px;
+            width: 80px;
         }
     }
 
